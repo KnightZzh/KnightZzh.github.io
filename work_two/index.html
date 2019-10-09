@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>高考志愿填报</title>
+	</head>
+	<body>
+		<table border="1" width="1500px" style="border-collapse: collapse;">
+			<caption>高考志愿填报表</caption>
+			<tr>
+				<td>姓名<input type="text" /></td>
+				<td> 男<input type="radio" name="xingbie" />
+					女<input type="radio" name="xingbie" /></td>
+				<td> 民族<input list="mingzu" name="mingzu" />
+					<datalist id="mingzu">
+						<option label="汉族" value="汉族" />
+						<option label="大和民族" value="大和民族" />
+						<option label="日耳曼民族" value="日耳曼民族" />
+					</datalist></td>
+				<td> 应届<input type="radio" name="yinjiewangjie" />
+					往届<input type="radio" name="yinjiewangjie" /></td>
+				<td rowspan="3"><img src="img/e223ab7fca806538fa7b4cfc9ddda144ac34827a.jpg" alt="打不开了" width="300" height="400"></td>
+			</tr>
+			<tr>
+				<td>籍贯<input type="text" /></td>
+				<td> 共青团员<input type="radio" name="zhenzhimianmao" />
+					群众<input type="radio" name="zhenzhimianmao" /></td>
+				<td>出生日期<input type="date" name="bdaymonth"></td>
+				<td>准考证号<input type="number" /></td>
+			</tr>
+			<tr>
+				<td> 农村<input type="radio" name="hukou" />
+					城市<input type="radio" name="hukou" /></td>
+				</td>
+				<td>电话号码<input type="number" /></td>
+				</td>
+				<td>毕业学校<input type="text" /></td>
+				<td>邮箱<input type="email" name="youxiang" /></td>
+			</tr>
+			<tr>
+				<td>个人特长</td>
+				<td colspan="4"><input type="text" style="width:1000px;height: 150px;" /></td>
+			</tr>
+			<tr>
+				<td>爱好</td>
+				<td colspan="4"><input type="text" style="width:1000px;height: 150px;" /></td>
+			</tr>
+			<tr>
+				<td rowspan="2">第一志愿<input list="xuexiao1" name="xuexiao1" />
+					<datalist id="xuexiao1">
+						<option label="清华大学" value="清华大学" />
+						<option label="北京大学" value="北京大学" />
+						<option label="湘潭大学" value="湘潭大学" />
+					</datalist></td>
+				<td>专业一</td>
+				<td><input list="1" name="1" />
+					<datalist id="1">
+						<option label="网络工程" value="网络工程" />
+						<option label="软件工程" value="软件工程" />
+					</datalist>
+				<td rowspan="2">是否服从调剂</td>
+				<td rowspan="2">是<input type="radio" name="tiaoji1" />
+					否<input type="radio" name="tiaoji1" /></td>
+				</td>
+			</tr>
+			<tr>
+				<td>专业二</td>
+				<td><input list="1" name="1" />
+					<datalist id="1">
+						<option label="网络工程" value="网络工程" />
+						<option label="软件工程" value="软件工程" />
+					</datalist></td>
+			</tr>
+			<tr>
+				<td rowspan="2">第二志愿
+					<input list="xuexiao2" name="xuexiao2" />
+					<datalist id="xuexiao2">
+						<option label="清华大学" value="清华大学" />
+						<option label="北京大学" value="北京大学" />
+						<option label="湘潭大学" value="湘潭大学" />
+					</datalist></td>
+				<td>专业一</td>
+				<td><input list="1" name="1" />
+					<datalist id="1">
+						<option label="网络工程" value="网络工程" />
+						<option label="软件工程" value="软件工程" />
+					</datalist>
+				<td rowspan="2">是否服从调剂</td>
+				<td rowspan="2">是<input type="radio" name="tiaoji2" />
+					否<input type="radio" name="tiaoji2" /></td>
+				</td>
+			</tr>
+			<tr>
+				<td>专业二</td>
+				<td><input list="1" name="1" />
+					<datalist id="1">
+						<option label="网络工程" value="网络工程" />
+						<option label="软件工程" value="软件工程" />
+					</datalist></td>
+			</tr>
+		</table>
+		<input type="submit" />
+	</body>
+</html>
