@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>腾讯首页</title>
+	  <meta charset="gb2312">
+	  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	  <meta name="baidu-site-verification" content="cNitg6enc2">
+	  <meta name="baidu_union_verify" content="4508fc7dced37cf569c36f88135276d2">
+	  <meta name="theme-color" content="#FFF">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="format-detection" content="telephone=no">
+
+	  <meta name="Keywords" content="资讯,新闻,财经,房产,视频,NBA,科技,腾讯网,腾讯,QQ,Tencent">
+	  <meta name="description" content="1">
+	  <link href="//mat1.gtimg.com/www/icon/favicon2.ico" rel="shortcut icon">
+	  <link href="//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/css/qq_6c055471.css" rel="stylesheet" charset="utf-8">
+	  <style>
+	    #skin-close{
+	      display: none;
+	    }
+	    .qq-body-skin{
+	      background-color: #d20001!important;
+	    }
+	    .qq-body-skin .layout{
+	      margin-bottom:0;
+	      padding-bottom: 20px;
+	    }
+	    .qq-body-skin .qq-skin,
+	    .qq-body-skin .qq-top{
+	      padding-bottom: 0;
+	    }
+	  </style>
+	</head>
+<body>
+
+  <div class="global">
+    <div class="layout qq-skin" id="big-skin"></div>
+    <div class="layout qq-top cf" bossexpo="bg_top">
+
+      <h1 class="top-logo fl">
+        <a href="/" target="_blank" bosszone="top_logo">
+          <img width="100%" alt="腾讯网" src="//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/qq_logo_2x.png">
+        </a>
+      </h1>
+      <div class="skin-min fl" id="small-skin"></div>
+      <div class="top-search fl" id="sosobar" role="search" bosszone="top_search">
+        <form name="soso_search_box" id="searchForm" action="https://www.sogou.com/tx?hdq=sogou-wsse-3f7bcd0b3ea82268&amp;ie=utf-8&amp;query=" method="get" target="_blank">
+          <div class="searchTxt" id="searchTxt">
+            <input name="cid" type="hidden" value="w.q.in.sb.web">
+            <div class="searchMenu fl">
+              <div class="searchSelected" id="searchSelected">网页</div>
+              <div class="searchTab" id="searchTab" style="display: none;">
+                <ul></ul>
+              <ul><li>网页</li><li>图片</li><li>视频</li><li>音乐</li><li>地图</li><li>问问</li><li>百科</li><li>新闻</li><li>购物</li></ul></div>
+            </div>
+            <input name="w" id="sougouTxt" aria-label="请输入搜索文字" type="text" value="" autocomplete="off">
+            <div class="searchSmart" id="searchSmart" style="display: none; visibility: hidden;">
+              <ul></ul>
+            </div>
+            <div class="fr">
+              <button class="searchBtn" id="searchBtn" type="submit">搜狗搜索</button>
+            </div>
+          </div>
+        <input name="hidden" type="hidden"></form>
+      </div>
+      <script type="text/javascript">
+        function sogouShow() {}
+        function sosoShow() {}
+      </script>
+      <div class="top-login fr" id="top-login">
+        <div class="item item-qzone fl">
+          <a class="q-icons l-qzone" href="https://qzone.qq.com" target="_blank" bosszone="top_qzone">Qzone</a>
+          <div class="pop">
+            <i class="arr-icon"></i>
+            <a class="txt" href="https://qzone.qq.com" target="_blank" bosszone="top_qzone">点击查看QQ空间</a>
+          </div>
+        </div>
+        <div class="item item-qmail fl">
+          <a class="q-icons l-qmail" href="https://mail.qq.com" target="_blank" bosszone="top_mail">Qmail</a>
+          <div class="pop">
+            <i class="arr-icon"></i>
+            <a class="txt" href="https://mail.qq.com/cgi-bin/loginpage" target="_blank" bosszone="top_mail">点击查看QQ邮箱</a>
+          </div>
+        </div>
+        <div class="item item-login fl">
+          <a class="l-login" onclick="userLogin()" href="javascript:;" bosszone="top_login">登录</a>
+          <div class="pop">
+            <i class="arr-icon"></i>
+            <div class="nick">你好，</div>
+            <a class="loginout" onclick="login.loginOut()" href="javascript:;" bosszone="top_login">[退出登录]</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="layout qq-nav">
+      <div class="nav-mod cf">
+        <style type="text/css">
+.qq-nav .nav-mod .nav-item{white-space: nowrap;}
+</style>
+
+<ul class="nav-main fl" bossexpo="bg_dh_1">
+    <li class="nav-item">
+    <a href="http://news.qq.com/" target="_blank" bosszone="dh_1">新闻</a>
+  </li>
+    <li class="nav-item">
+    <a href="http://v.qq.com/" target="_blank" bosszone="dh_2">视频</a>
+  </li>
+    <li class="nav-item">
+    <a href="http://new.qq.com/ch/photo/" target="_blank" bosszone="dh_3">图片</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://new.qq.com/ch/milite/" target="_blank" bosszone="dh_4">军事</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://sports.qq.com/" target="_blank" bosszone="dh_5">体育</a>
+  </li>
+    <li class="nav-item">
+    <a href="http://sports.qq.com/nba/" target="_blank" bosszone="dh_6">NBA</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://new.qq.com/ch/ent/" target="_blank" bosszone="dh_7">娱乐</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://new.qq.com/ch/finance" target="_blank" bosszone="dh_8">财经</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://new.qq.com/ch/tech/" target="_blank" bosszone="dh_9">科技</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://new.qq.com/ch/fashion/" target="_blank" bosszone="dh_10">时尚</a>
+  </li>
+    <li class="nav-item">
+    <a href="http://auto.qq.com/" target="_blank" bosszone="dh_11">汽车</a>
+  </li>
+    <li class="nav-item">
+    <a href="http://house.qq.com/" target="_blank" bosszone="dh_12">房产</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://new.qq.com/ch/edu/" target="_blank" bosszone="dh_13">教育</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://new.qq.com/ch/cul/" target="_blank" bosszone="dh_14">文化</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://new.qq.com/ch/games/" target="_blank" bosszone="dh_15">游戏</a>
+  </li>
+    <li class="nav-item">
+    <a href="https://new.qq.com/ch/astro/" target="_blank" bosszone="dh_16">星座</a>
+  </li>
+  </ul><!--124ab1f2c59361a8f083289f63e618ba--><!--[if !IE]>|xGv00|c8ad5e7a2a8e8bd6a70240bd0844a132<![endif]-->
+        <div class="nav-more fl">
+  <div class="more-txt" bosszone="dh_more">更多</div>
+  <div class="nav-sub" bossexpo="bg_dh_2">
+    <ul class="sub-list cf">
+            <li class="nav-item">
+        <a href="https://new.qq.com/ch/ori/" target="_blank" bosszone="dh_1_2">独家</a>
+      </li>
+
+          </ul>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="layout qq-gg gg-1 cf">
+      <div class="col-1 fl">
+<div class="l_qq_com" id="NEW_QQCOM_N_Width1" style="width: 920px; height: 75px; overflow: hidden; display: block; position: relative;" adconfig_lview="l.qq.com" adconfig_charset="gbk" adconfig_lview_template="//l.qq.com/lview?c=www&amp;loc={loc}" oid="100" btoid="0" display="auto"><a style="display:block;cursor:pointer;width:920px;height:75px;background-image:url(//ra.gtimg.com/web/default_fodders/920x75_www.png);background-size:920px 75px;background-position:50% 50%;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//ra.gtimg.com/web/default_fodders/920x75_www.png',sizingMethod='scale');" href="https://news.qq.com/mobile/index.htm" target="_blank"></a></div><!--NEW_QQCOM_N_Width1 AD end --><!--[if !IE]>|xGv00|b3d18b0084cd79d75eec6cc3e21077fc<![endif]-->
+      </div>
+      <div class="col-2 fr">
+        <div class="gg-focus" id="gg-focus1">
+  <ul class="list">
+        <li class="item" style="display: none;">
+      <a href="http://www.qq.com/jubaoxuzhi.htm" target="_blank">
+        <img alt="网络监控" src="//mat1.gtimg.com/pingjs/ext2020/test2017/netwatch.png">
+      </a>
+    </li>
+        <li class="item" style="display: none;">
+      <a href="https://110.qq.com/" target="_blank">
+        <img alt="腾讯网110" src="//img1.gtimg.com/ninja/2/2018/10/ninja153907290259802.png">
+      </a>
+    </li>
+        <li class="item" style="display: list-item;">
+      <a href="http://report.12377.cn:13225/toreportinputNormal_anis.do" target="_blank">
+        <img alt="网上有害信息举报" src="//img1.gtimg.com/ninja/2/2018/10/ninja153907291410277.png">
+      </a>
+    </li>
+  </ul>
+  <div class="dot"><span></span><span></span><span class="active"></span></div>
+</div>
+      </div>
+    </div>
+    <div class="layout qq-main cf">
+      <div class="col col-1 fl">
+
+        <div class="mod m-news" id="main-news">
+
+          <div class="hd cf">
+            <h2 class="tit fl"><a href="//news.qq.com" target="_blank" bosszone="yw_logo">要闻</a></h2>
+            <span class="tit-line fl" style="display: block;"></span>
+            <h2 class="tit fl active" style="display: block;"><a href="http://hn.qq.com/" target="_blank">冬木新闻</a></h2>
+            <div class="m-weather f14 fr" id="m-weather">
+              <a id="weaher-info" href="https://tianqi.qq.com/?province=%E6%B9%96%E5%8D%97%E7%9C%81&amp;city=%E6%B9%98%E6%BD%AD%E5%B8%82" target="_blank">
+                <div class="w-city fl" id="ipWeather">冬木</div>
+                <div class="w-icon fl" id="weatherIcon" style="background-image:url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/weather/00.svg)"></div>
+                <div class="w-du fl" id="weatherTemperature" style="margin-left: 5px;">20℃</div>
+              </a>
+
+              <div class="weather-more weatherMoreFlipped" id="weatherMore">
+                <div class="face front">
+                  <div class="weatherMoreTitle cf">
+                    <div class="weather-info fl">
+                      <a id="weatherMoreLink" href="https://tianqi.qq.com/?province=%E6%B9%96%E5%8D%97%E7%9C%81&amp;city=%E6%B9%98%E6%BD%AD%E5%B8%82" target="_blank">
+                        <span id="weatherMoreCity">冬木</span>
+                        <span id="weatherMoreTxt">晴</span>
+                        <span id="weatherMoreTem">20℃</span>
+                      </a>
+                    </div>
+                    <div class="weatherMoreSet fr" id="weatherMoreSet">
+                      <a>更换城市</a>
+                    </div>
+                  </div>
+                  <div class="weatherMoreAir">
+                    <a id="weatherMoreAirLink" href="https://tianqi.qq.com/?province=%E6%B9%96%E5%8D%97%E7%9C%81&amp;city=%E6%B9%98%E6%BD%AD%E5%B8%82" target="_blank">
+                      空气质量：<span id="weatherMoreAirTxt" style="padding-right:20px;">重度污染</span>
+                      PM2.5：<span id="weatherMoreAirPmTxt">152</span>
+                    </a>
+                  </div>
+                  <a class="weatherMoreFuture cf" id="weatherMoreFuture" href="https://tianqi.qq.com/?province=%E6%B9%96%E5%8D%97%E7%9C%81&amp;city=%E6%B9%98%E6%BD%AD%E5%B8%82" target="_blank">
+                    <div class="weatherMoreFutureCon">
+                      <div class="weatherMoreIcon w-icon" id="weatherMoreTodayIcon" style="background-image:url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/weather/00.svg)"></div>
+                      <p><strong>今天</strong></p>
+                      <p>
+                        <span class="weatherMoreMath" id="weatherMoreTodayHighest">24</span>℃ -
+                        <span class="weatherMoreMathLow" id="weatherMoreTodayLowest">12</span>
+                        <span class="weatherMoreSign">℃</span>
+                      </p>
+                    </div>
+                    <div class="weatherMoreFutureCon">
+                      <div class="weatherMoreIcon w-icon" id="weatherMoreTomorrowIcon" style="background-image:url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/weather/01.svg)"></div>
+                      <p><strong>明天</strong></p>
+                      <p>
+                        <span class="weatherMoreMath" id="weatherMoreTomorrowHighest">24</span>℃ -
+                        <span class="weatherMoreMathLow" id="weatherMoreTomorrowLowest">13</span>
+                        <span class="weatherMoreSign">℃</span></p>
+                    </div>
+                    <div class="weatherMoreFutureCon">
+                      <div class="weatherMoreIcon w-icon" id="weatherMoreAfterTomorrowIcon" style="background-image:url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/weather/07.svg)"></div>
+                      <p><strong>后天</strong></p>
+                      <p>
+                        <span class="weatherMoreMath" id="weatherMoreAfterTomorrowHighest">17</span>℃ -
+                        <span class="weatherMoreMathLow" id="weatherMoreAfterTomorrowLowest">12</span>
+                        <span class="weatherMoreSign">℃</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="face back">
+                  <div class="weatherMoreTitle cf">
+                    <div class="fl">
+                      <span>设置城市</span>
+                    </div>
+                    <a class="weatherMoreReset" id="weatherMoreReset" style="display: none;"">恢复默认城市</a>
+                  </div>
+                  <div class="weatherMoreSelectLayout cf">
+                    <div class="weatherMoreProviceLayout fl">
+                      <div class="weatherMoreProviceDefault" id="ipSetProvince">湖南省</div>
+                      <div class="weatherMoreProviceSelect" id="weatherMoreProviceSelect">
+                        
+                      </div>
+                    </div>
+                    <div class="weatherMoreCityLayout fl">
+                      <div class="weatherMoreCityDefault" id="ipSetCity">长沙市</div>
+                      <div class="weatherMoreCitySelect" id="weatherMoreCitySelect">
+                        <ul id="weatherMoreCitySelectUl"><li><a>长沙市</a></li><li><a>株洲市</a></li><li><a href="javascript:void(0);">湘潭市</a></li><li><a href="javascript:void(0);">衡阳市</a></li><li><a href="javascript:void(0);">邵阳市</a></li><li><a href="javascript:void(0);">岳阳市</a></li><li><a href="javascript:void(0);">常德市</a></li><li><a href="javascript:void(0);">张家界市</a></li><li><a href="javascript:void(0);">益阳市</a></li><li><a href="javascript:void(0);">郴州市</a></li><li><a href="javascript:void(0);">永州市</a></li><li><a href="javascript:void(0);">怀化市</a></li><li><a href="javascript:void(0);">娄底市</a></li><li><a href="javascript:void(0);">湘西州</a></li></ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="weatherMoreNews">
+                    <div class="weatherMoreNewsCheckbox weatherMoreNewsYes" id="weatherMoreNewsCheckbox">同时更新资讯所属地</div>
+                  </div>
+                  <div class="weatherMoreBtn">
+                    <input class="weatherMoreSubmit" id="weatherMoreSubmit" type="button" value="确定">
+                    <input class="weatherMoreCancel" id="weatherMoreCancel" type="button" value="取消">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="bd">
+            <div class="tab-news" id="tab-news-01" style="display: none;" bossexpo="bg_yw">
+              <style>
+.bgcolor1 {
+    background: #f56300;
+    color: #FFF;
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+.bgcolor1:hover {
+    color: #FFF;
+}
+</style>
+<ul class="yw-list" bosszone="yw_1">
+
+</ul>
+              <style type="text/css">
+.news_color_3{color:#0c82ff!important;}
+.news_color_4{color:#df5147!important;}
+</style>
+
+<ul class="yw-list" bosszone="yw_2">
+
+  </ul>
+            </div>
+
+            <div class="tab-news undis" id="tab-news-02" style="display: block;" bossexpo="bg_dfz"><ul class="yw-list" bosszone="dfz_1">
+        <li class="news-top"><a href="https://hn.qq.com/a/20191103/004565.htm" target="_blank">震惊！冬木市一男子竟说出“人被杀就会死”</a></li>
+          <li><a href="http://hn.qq.com/a/20191104/000621.htm" target="_blank">震惊！卫宫士郎训练时竟被两少女偷窥</a></li>
+          <li><a href="http://hn.qq.com/a/20191104/000831.htm" target="_blank">冬木某地煤气泄漏</a></li>
+          <li><a href="http://hn.qq.com/a/20191104/000855.htm" target="_blank">热心市民金先生竟被一普通男子砍下手肘</a></li>
+          <li><a href="http://hn.qq.com/a/20191104/002016.htm" target="_blank">间桐家中竟藏有大量虫子，这是人性的扭曲还是道德的沦丧</a></li>
+          <li><a href="http://hn.qq.com/a/20191104/001972.htm" target="_blank">berserker不敌archer，现已被击杀</a></li>
+          <li><a href="http://hn.qq.com/a/20191104/003158.htm" target="_blank">伊利亚竟被金闪闪掏心</a></li>
+          <li><a href="http://hn.qq.com/a/20191104/003038.htm" target="_blank">11月7日圣杯战争圆满落幕</a></li>
+                  </ul><ul class="yw-list" bosszone="dfz_2">
+    <li class="news-pic-txt cf">
+      <div class="pic fl">
+        <a href="https://hn.qq.com/photo/" target="_blank">
+          <img alt="惊险！阿尔托莉雅不敌吉尔伽美什!" src="img/57561242_p0.jpg">
+        </a>
+      </div>
+      <div class="txt fl">
+        <a href="https://hn.qq.com/photo/" target="_blank">惊险！阿尔托莉雅不敌吉尔伽美什!</a>
+        <div class="info">
+          <a href="https://hn.qq.com/photo/" target="_blank">
+            
+          </a>
+        </div>
+      </div>
+    </li>
+<!--89fad06115b89d4ad32da315fa72fdb9--><!--[if !IE]>|xGv00|394d2f39958c68448fa43d841a5edead<![endif]--></div>
+            <!-- /地方新闻 -->
+
+          </div>
+        </div>
+      </div>
+      <div class="col col-2 fl">
+        <div class="mod m-topic" bossexpo="bg_jrht">
+  <div class="hd cf">
+    <h2 class="tit active"><a href="http://view.news.qq.com/" target="_blank" bosszone="jrht_logo">今日话题</a></h2>
+  </div>
+  <div class="bd">
+    <ul class="news-list">
+                  <li class="news-top" bosszone="jrht_1">
+          <a href="https://new.qq.com/rain/a/20191103A0CQZZ00" target="_blank">震惊！！！web作业竟如此困难</a>
+        </li>
+                        <li bosszone="jrht_2">
+                                                    <a class="cate" href="https://new.qq.com/omn/author/1795" target="_blank">半月谈网</a><span class="line">|</span>
+                                                        <a href="https://new.qq.com/rain/a/20191103A093M200" target="_blank">10G技术现已正式投入商用</a>
+                                            </li>
+                        <li bosszone="jrht_3">
+                                                    <a class="cate" href="https://new.qq.com/omn/author/1209" target="_blank">瞭望</a><span class="line">|</span>
+                                                        <a href="https://new.qq.com/rain/a/20191103A09R9J00" target="_blank">4级考试即将到来，你准备好了吗？</a>
+                                            </li>
+                        <li bosszone="jrht_4">
+                                                    <a class="cate" href="https://new.qq.com/omn/author/5012907" target="_blank">新京报评论</a><span class="line">|</span>
+                                                        <a href="https://new.qq.com/rain/a/20191103A0CFM400" target="_blank">震惊！！社会主义竟企图复辟！</a>
+                                            </li>
+                        <li bosszone="jrht_5">
+                                                    <a class="cate" href="https://new.qq.com/omn/author/5512819" target="_blank">财看见</a><span class="line">|</span>
+                                                        <a href="https://new.qq.com/rain/a/20191102A08EVX00" target="_blank">某web教师竟通过这样的方式赚钱</a>
+                                            </li>
+                        <li bosszone="jrht_6">
+                                                    <a class="cate" href="https://new.qq.com/omn/author/5627274" target="_blank">巅锋问答</a><span class="line">|</span>
+                                                        <a href="https://new.qq.com/rain/a/20191101A0KWGY00" target="_blank">1+1到底等于几</a>
+                                            </li>
+                        <li bosszone="jrht_7">
+                                                    <a class="cate" href="https://new.qq.com/omn/author/5107513" target="_blank">较真</a><span class="line">|</span>
+                                                        <a href="https://new.qq.com/rain/a/20191103A03Y5900" target="_blank">饭圈文化为何令人感到恶心</a>
+                                            </li>
+              </ul>
+  </div>
+</div><!--5667439727dd242c7b1ac2c833b46787--><!--[if !IE]>|xGv00|32266c3ada78378ab7b35901add54948<![endif]-->
+        <div class="mod m-yao13" bossexpo="bg_ycsp">
+  <div class="hd-2 cf">
+    <h2 class="tit active">
+                        <a href="https://v.qq.com/detail/8/84842.html" target="_blank" bosszone="ycsp_logo">
+            <img alt="十三邀" src="//mat1.gtimg.com/news/zt2018/qqpclmlogo/logo_ssy.png">
+          </a>
+                                                                                                      </h2>
+  </div>
+  <div class="bd">
+    <ul class="news-list">
+                                        <li class="news-pic-txt cf" bosszone="ycsp_2">
+            <div class="pic video-box click-drag-play fl" bossvv="vv_ycsp">
+              <img alt="陈冲出国看电影：原来英雄不是空喊口号 有真实生命力" src="img/60469179_p0.jpg">
+              <i class="q-icons icon-play2"></i>
+              <div class="txt undis">陈冲出国看电影：原来英雄不是空喊口号 有真实生命力</div>
+              <div class="desc undis">e3016v8gjzy</div>
+              <div class="mod-player" id="mod-player4" style="display: none;" data-url="http://v.qq.com/x/page/e3016v8gjzy.html" data-vid="e3016v8gjzy"></div>
+              <div class="click-layer"></div>
+            </div>
+            <div class="txt fl">
+              <a href="http://v.qq.com/x/page/e3016v8gjzy.html" target="_blank">冠位魔术师三大候选人</a>
+              <div class="info">
+
+              </div>
+            </div>
+          </li>
+                                          
+                      </ul>
+  </div>
+</div><!--9e2ba2130e8ac21a470f47e1c0756978--><!--[if !IE]>|xGv00|35f56c18f13bc76f7c95a0f3f66614d5<![endif]-->
+        <div class="mod m-picture" bossexpo="bg_th">
+          <div class="hd-2 cf">
+            <h2 class="tit active">
+            </h2>
+          </div>
+          <div class="bd">
+          </div>
+        </div>
+      </div>
+      <div class="col col-3 fr">
+        <div class="m-product" id="m-product">
+  <ul class="list f14">
+                                                                                <li class="q-icons prod-1">
+                                                <a href="http://news.qq.com/mobile/" target="_blank" bosszone="cp_1_1_1">新闻APP</a>
+                                  <a href="http://sports.qq.com/kbsweb/" target="_blank" bosszone="cp_1_1_2">体育APP</a>
+                                  <a href="https://om.qq.com/userAuth/index" target="_blank" bosszone="cp_1_1_3">企鹅号</a>
+                                  <a href="http://kuaibao.qq.com/" target="_blank" bosszone="cp_1_1_4">快报</a>
+                                  <a href="http://v.qq.com/download.html#pc" target="_blank" bosszone="cp_1_1_5">视频</a>
+                                  <a href="https://browser.qq.com/" target="_blank" bosszone="cp_1_1_6">浏览器</a>
+                                  <a href="http://www.weishi.com/" target="_blank" bosszone="cp_1_1_7">微视</a>
+                                        </li>
+                                <li class="q-icons prod-2">
+                                                <a href="http://weixin.qq.com/" target="_blank" bosszone="cp_1_2_1">微信</a>
+                                  <a href="https://im.qq.com/index.shtml" target="_blank" bosszone="cp_1_2_2">QQ</a>
+                                  <a href="https://qzone.qq.com/" target="_blank" bosszone="cp_1_2_3">空间</a>
+                                  <a href="https://work.weixin.qq.com/wework_admin/register_wx?from=regopt_tlogo_wxcbar_tengxunwang" target="_blank" bosszone="cp_1_2_4">企业微信</a>
+                                  <a href="https://mail.qq.com/cgi-bin/loginpage" target="_blank" bosszone="cp_1_2_5">邮箱</a>
+                                  <a href="https://cloud.tencent.com/?fromSource=gwzcw.756432.756432.756432" target="_blank" bosszone="cp_1_2_6">腾讯云</a>
+                                  <a href="https://guanjia.qq.com/?ADTAG=news.qqcom" target="_blank" bosszone="cp_1_2_7">电脑管家</a>
+                                  <a href="https://vip.qq.com/" target="_blank" bosszone="cp_1_2_8">会员</a>
+                                        </li>
+                                <li class="q-icons prod-3">
+                                                <a href="http://lol.qq.com/index.shtml?ADTAG=media.innerenter.qqcom.index_navigation" target="_blank" bosszone="cp_1_3_1">LOL</a>
+                                  <a href="http://dnf.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation" target="_blank" bosszone="cp_1_3_2">DNF</a>
+                                  <a href="http://cf.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation" target="_blank" bosszone="cp_1_3_3">CF</a>
+                                  <a href="http://pvp.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation" target="_blank" bosszone="cp_1_3_4">王者</a>
+                                  <a href="https://gouhuo.qq.com/?ADTAG=QQHOME" target="_blank" bosszone="cp_1_3_5">单机游戏</a>
+                                  <a href="http://huoying.qq.com/act/a20141009landingpage/index.htm?via=45&amp;ADTAG=ied.neiguang&amp;ADTAG=media.innerenter.qqcom.index_navigation" target="_blank" bosszone="cp_1_3_6">火影OL</a>
+                                  <a href="http://wuxia.qq.com/?ADTAG=media.innerenter.qqcom.index_navigation" target="_blank" bosszone="cp_1_3_7">天刀</a>
+                                  <a href="http://iwan.qq.com/index.htm?ADTAG=media.innerenter.qqcom.indexnavigation" target="_blank" bosszone="cp_1_3_8">爱玩</a>
+                                  <a href="http://nz.qq.com/main.shtml?ADTAG=media.innerenter.qqcom.index_navigation" target="_blank" bosszone="cp_1_3_9">逆战</a>
+                                        </li>
+                                <li class="q-icons prod-4">
+                                                <a href="https://pc.qq.com/" target="_blank" bosszone="cp_1_4_1">软件</a>
+                                  <a href="https://pay.qq.com/" target="_blank" bosszone="cp_1_4_2">Q币</a>
+                                  <a href="https://www.jd.com/?utm_source=qq.com&amp;utm_medium=cpc&amp;utm_campaign=dmp_77&amp;utm_term=dmp_77_11727_d604816f27c2b5e98ae51fd59de8b1c43abfdac_1538472240" target="_blank" bosszone="cp_1_4_3">京东</a>
+                                  <a href="https://map.qq.com/#city=%D6%D0%B9%FA&amp;wd=%D6%D0%B9%FA" target="_blank" bosszone="cp_1_4_4">腾讯地图</a>
+                                  <a href="https://docs.qq.com/" target="_blank" bosszone="cp_1_4_5">腾讯文档</a>
+                                  <a href="https://qian.qq.com/?stat_data=oth87ppcsy00222&amp;ADTAG=SCQD.BD.PC.TXDH1" target="_blank" bosszone="cp_1_4_6">理财通</a>
+                                  <a class="more" href="http://www.qq.com/map/" target="_blank" bosszone="cp_1_4_7">全部</a>
+                                        </li>
+                </ul>
+  <div class="prod-more" id="prod-more">
+    <div class="prod-more-btn">
+      <div class="q-icons btn-icon">展开</div>
+    </div>
+    <ul class="list f14">
+
+                                                                          </ul>
+  </div>
+</div><!--ad30931240d91472b8d07a2e113395db--><!--[if !IE]>|xGv00|5d0316db8552e050fdf4e1ce0a91a032<![endif]-->
+        <div class="mod m-match" bossexpo="bg_rmss">
+  <div class="hd cf">
+    <h2 class="tit active fl">
+      <a href="http://kbs.sports.qq.com/#hot" target="_blank" bosszone="rmss_logo">热门赛事</a>
+    </h2>
+    <div class="fr">
+      <a class="match-info" id="match-info" href="http://kbs.sports.qq.com/#hot" target="_blank" bosszone="rmss_sc">
+        <span class="match-time">11月4日</span>
+        <span class="tit-line"></span>
+        <span class="q-icons match-txt">中午好，今天有32场热门比赛</span>
+      </a>
+    </div>
+  </div>
+  <div class="bd">
+    <ul class="news-list">
+                            <li class="video-box click-pop-play" bosszone="rmss_1" bossvv="vv_rmss">
+          <img alt="北京22分大胜天津 林书豪得到25分单节狂砍14分" src="img/61966876_p0.jpg">
+          <i class="q-icons icon-play"></i>
+          <div class="desc undis">a0032dws70t</div>
+          <a class="txt" href="https://v.qq.com/x/cover/mzc00200dl7d3k9/a0032dws70t.html" target="_blank">金闪闪的寻宝之旅</a>
+                    <div class="mod-player" id="mod-player1" style="display: none;" data-url="https://v.qq.com/x/cover/mzc00200dl7d3k9/a0032dws70t.html" data-vid="a0032dws70t">   <txpdiv tabindex="-1" class="txp_player txp_player_desktop txp_autohide_progress txp_player_external txp_player_xs txp_player_mini txp_autohide" id="txplayer_ce40e12047db369738a44c498e239b3f" style="width:100%;height:100%">   <div style="width:1px;height:1px;display:block;-webkit-user-select: auto;user-select: auto;"></div>   <txpdiv class="txp_gradient_top txp_none" data-role="txp-frame-gradient-top"></txpdiv>   <txpdiv class="txp_gradient_bottom"></txpdiv>   <txpdiv class="txp_video_container" data-role="txp-video-wrapper">   <video style="width: 100%; height: 100%; display: block; background-color: rgb(0, 0, 0);" src="blob:https://www.qq.com/10fb33d3-2aef-464a-a600-269290dc5f9a" preload="auto" data-role="txp_video_tag" x-webkit-airplay="" webkit-playsinline=""></video>   <video style="width: 100%; height: 100%; display: none; background-color: rgb(0, 0, 0);" preload="auto" data-role="txp_video_tag" x-webkit-airplay="" webkit-playsinline=""></video> <txpdiv class="txp_shadow" data-role="txp-shadow-mod"></txpdiv></txpdiv><txpdiv class="txp_none" style="top: 0px; width: 100%; height: 100%; right: 0px; position: absolute; z-index: 4; pointer-events: none;" data-role="hd-ad-adapter-videoadcountdownlayer"><txpdiv class="txp_ad_control txp_none" data-role="adplayer-enter-countdown">
+    <txpdiv class="txp_ad_skip">
+        <txpdiv class="txp_ad_countdown" data-role="adplayer-enter-countdown-num"></txpdiv>
+        <txpdiv class="txp_ad_skip_text">进入广告</txpdiv>
+    </txpdiv>
+</txpdiv></txpdiv><txpdiv style="top: 0px; width: 100%; height: 100%; right: 0px; position: absolute; z-index: 4; pointer-events: none;" data-role="hd-ad-adapter-interactivelayer"></txpdiv><txpdiv class="txp_none" style="top: 0px; width: 100%; height: 100%; right: 0px; position: absolute; z-index: 4; background-color: rgb(0, 0, 0);" data-role="hd-ad-adapter-adlayer"><style>
+    .txp_btn_ad_volume{
+        background: rgba(37, 37, 37, .7) url(https://ca.gtimg.com/adplugin/js/imgs/mutes.png) no-repeat;
+        height: 28px;
+        border: none;
+        border-radius: 14px;
+        width: 28px;
+        margin-left: 8px;
+        user-select: initial;
+        outline: none;
+    }
+    .txp_btn_ad_mute{
+        background-position-y: -28px;
+    }
+    /* adblock */
+    .txp_cac_black_screen {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #000;
+        text-align: center;
+        display: flex;
+        line-height: 1.5;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .txp_cac_black_screen .txp_cac_black_screen_title {
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+    }
+    .txp_cac_black_screen .txp_cac_black_screen_em {
+        display: inline;
+        color: #ff7000;
+    }
+    
+</style>
+<txpdiv class="txp_ad txp_none" style="width: 100%; height: 100%;" data-role="adplayer-video-container">
+    <txpdiv class="txp_none" style="width: 100%; height: 100%; position: relative;" data-role="adplayer-video-ad-container"></txpdiv>
+    <txpdiv class="txp_none" style="width: 100%; height: 100%;" data-role="adplayer-video-rich-media-ad-container"></txpdiv>
+    <txp class="txp_cac_black_screen txp_none" data-role="aplayer-video-black-screen">
+        <txp class="txp_cac_black_screen_title">广告被拦截插件误伤啦，<txp class="txp_cac_black_screen_em">1</txp>秒后播放</txp>
+        <txp>关闭拦截插件恢复正常</txp>
+    </txp>
+    <txpdiv class="txp_ad_inner txp_none" data-role="adplayer-video-inner">
+        <a class="txp_ad_link txp_none" data-role="adplayer-video-link-area"></a>
+        <a class="txp_ad_more txp_none" data-role="adplayer-video-detail-btn"><txpdiv data-role="adplayer-video-detail-btn-text"></txpdiv><txpdiv class="txp_icon_arrow"></txpdiv></a>
+        <txpdiv style="left:10px;bottom:10px;position:absolute;opacity:0.6;font-size:12px;text-shadow:2px 2px #000" data-role="adplayer-video-dsp-name-text"></txpdiv>
+        <txpdiv class="txp_ad_control txp_none" data-role="adplayer-video-ad-control">
+            <txpdiv class="txp_ad_skip">
+                <txpdiv class="txp_ad_countdown txp_none" data-role="adplayer-video-countdown"></txpdiv>
+                <txpdiv class="txp_ad_skip_text txp_none" style="cursor: pointer;" data-role="adplayer-video-skip-text"></txpdiv>
+                <button class="txp_btn txp_btn_close txp_none" data-role="adplayer-video-close-btn"></button>
+                <button title="无法跳过广告说明" class="txp_btn txp_btn_hint txp_none" data-role="adplayer-video-no-skip-btn"></button>
+            </txpdiv>
+            <button class="txp_btn txp_btn_ad_volume txp_none" style="z-index: 10;position: relative;" data-role="adplayer-video-volume-btn">
+            </button>
+        </txpdiv>
+        <txpdiv class="txp_ad_dialog txp_none" data-role="adplayer-video-no-skip-dialog">
+            <txpdiv class="txp_dialog_bd">
+                为了给腾讯视频用户提供更多优质美剧，应<span data-role="adplayer-video-no-skip-author">版权方（华纳）</span>要求，好莱坞会员在观看华纳美剧时无法跳过广告（《吸血鬼日记》《破产姐妹》《无耻之徒》等）。我们会为会员用户继续争取免广告权益，请您谅解，谢谢！
+            </txpdiv>
+            <txpdiv class="txp_ad_btn txp_none" data-role="adplayer-video-no-skip-know-btn">我知道了!</txpdiv>
+            <a class="txp_ad_fb" href="http://support.qq.com/write.shtml?fid=850" target="_blank">意见反馈</a>
+            <button class="txp_btn txp_btn_close txp_none" data-role="adplayer-video-no-skip-close-btn"></button>
+        </txpdiv>
+    </txpdiv>
+</txpdiv></txpdiv><txpdiv class="txp_poster txp_none" style='background-image: url("//vpic.video.qq.com/-33988465/a0032dws70t.png"); background-size: cover;' data-role="txp-ui-poster"></txpdiv><txpdiv class="txp_overlay_loading">   <txpdiv class="txp_text txp_none" data-role="txp-ui-continue-play"></txpdiv>   <txpdiv class="txp_icon_loading txp_none" data-role="txp-ui-loading"></txpdiv> </txpdiv><txpdiv class="txp_alert_info txp_none" data-role="txp-ui-tips">   <txpdiv class="txp_alert_content">     <txpdiv class="txp_alert_text" data-role="txp-ui-tips-text"></txpdiv>     <button title="关闭" class="txp_btn txp_btn_close" data-role="txp-ui-tips-close"></button>   </txpdiv> </txpdiv><txpdiv class="txp_overlay_loading txp_none" data-role="txp-ui-loading-with-ad">   <txpdiv class="txp_overlay_loading_content">     <txpdiv class="txp_overlay_loading_ad" data-role="txp-ui-loading-with-ad-layer"></txpdiv>          <img class="txp_overlay_loading_slogan" style="width:165px" src="//vm.gtimg.cn/tencentvideo/txp/style/img/slogan.png">     <txpdiv class="txp_overlay_loading_name">腾讯视频 v.qq.com</txpdiv>          <txpdiv class="txp_overlay_loading_speed" data-role="txp-ui-loading-with-ad-speed"></txpdiv>     <txpdiv class="txp_overlay_loading_canvas">       <canvas width="800" height="450" data-role="txp-ui-loading-with-ad-canvas"></canvas>     </txpdiv>   </txpdiv> </txpdiv><txpdiv class="txp_video_error txp_none" data-role="txp-ui-error">   <img class="txp_error_pic" alt="" data-role="txp-ui-error-tip">   <txpdiv class="txp_error_title">     <span data-role="txp-ui-error-msg">网络链接似乎出现问题，</span>     <span data-role="txp-ui-error-refresh">       你可以 <button class="txp_btn">刷新</button>       <span data-role="txp-ui-error-changeplayer"> 或 <button class="txp_btn">使用兼容模式播放</button></span>       <span class="txp_none" data-role="txp-ui-error-when-coolopen">试试</span>     </span>   </txpdiv>   <txpdiv class="txp_error_title2" data-role="txp-ui-error-client-title">     <span data-role="txp-ui-error-client-span">使用PC客户端播放更稳定 </span>     <a class="txp_link_btn" data-role="txp-ui-error-client-btn">立即下载</a>     <txpdiv class="txp_error_title2 txp_link_btn txp_none" style="margin-right: 0;" data-role="txp-ui-error-play-btn">       返回继续播放     </txpdiv>   </txpdiv>   <span class="txp_none" style="margin: 16px 0 0 0;" data-role="txp-ui-error-qqbrowser-btn">     或使用最新 <a style="display:inline; margin: 16px 0 0 0;text-decoration: underline!important;">QQ浏览器</a> / Chrome观看   </span>   <txpdiv class="txp_error_code"><span data-role="txp-ui-error-code">[ 错误码: xx, xxx ]</span> <a href="//support.qq.com/products/2208" target="_blank">我要反馈</a></txpdiv> </txpdiv> <txpdiv class="txp_bottom" style="overflow:initial;" data-role="txp-control-wrap">   <txpdiv class="txp_controls">     <txpdiv class="txp_left_controls" data-role="txp-control-left"><txpdiv class="txp_btn txp_btn_play" aria-label="播放/暂停" data-status="pause" data-role="txp-ui-control-playbtn">      <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon txp_icon_play" viewBox="0 0 36 36" version="1.1">     <use class="txp_svg_symbol txp_svg_play" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_play" />     <use class="txp_svg_symbol txp_svg_pause" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_pause" />     <use class="txp_svg_symbol txp_svg_stop" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_stop" />     <use class="txp_svg_symbol txp_svg_replay" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_replay" />   </svg>   <txpdiv class="txp_tooltip" data-role="txp-ui-control-playbtn-tips">暂停</txpdiv>    </txpdiv><txpdiv class="txp_btn txp_btn_next txp_none" aria-label="下一集" data-role="txp-ui-control-play-next" data-report="play-next">   <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon txp_icon_next" viewBox="0 0 36 36" version="1.1">     <use class="txp_svg_symbol txp_svg_next" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_next" />   </svg>   <txpdiv class="txp_tooltip txp_none" data-role="txp-next-tip">下一集</txpdiv> </txpdiv><txpdiv class="txp_time_display" data-role="txp-control-time-mod">   <txpdiv class="txp_time_current" data-role="txp-control-currenttime">00:00</txpdiv>   <txpdiv class="txp_time_separator">/</txpdiv>   <txpdiv class="txp_time_duration" data-role="txp-control-duration">02:58</txpdiv>   <txpdiv class="txp_live_badge">直播</txpdiv> </txpdiv></txpdiv>     <txpdiv class="txp_progress_bar_container" data-role="txp-control-center"><txpdiv class="txp_progress_list" style="background-color: transparent;" data-role="txp-control-progress-list">   <txpdiv class="txp_progress_load" style="width: 100%;" data-role="txp-control-load-progress"></txpdiv>   <txpdiv class="txp_progress_play" style="width: 64.6%;" data-role="txp-control-play-progress"></txpdiv>   <txpdiv class="txp_interact_progress_list">     <txpdiv class="txp_interact_dot txp_none" data-role="txp-control-play-start-time-point"></txpdiv>     <txpdiv class="txp_interact_dot txp_none" data-role="txp-control-play-end-time-point"></txpdiv>   </txpdiv> </txpdiv>  <txpdiv class="txp_btn_scrubber" style="left: 64.6%;" data-role="txp-control-play-point">   <txpdiv class="txp_scrubber_indicator" style="left:0;top:0;" data-role="txp-control-progress-indicator"></txpdiv> </txpdiv></txpdiv>     <txpdiv class="txp_right_controls" data-role="txp-control-right"><txpdiv class="txp_time_display" data-role="txp-button-duration">  <txpdiv class="txp_time_duration" data-role="txp-button-duration-time">02:58</txpdiv> </txpdiv><button class="txp_btn txp_btn_barrage txp_none" data-role="txp-ui-control-barrage-btn" data-report="barrage-btn">  <txpdiv class="txp_btn_inner">弹幕</txpdiv> </button><txpdiv class="txp_btn txp_btn_definition" aria-label="清晰度" data-role="txp-ui-control-definition">     <txpdiv class="txp_label" data-role="txp-ui-control-definition-hover">高清</txpdiv>     <txpdiv class="txp_popup txp_popup_definition">         <txpdiv class="txp_popup_content" data-role="txp-ui-control-definition-list"><txpdiv class="txp_menuitem txp_menuitem_ad txp_none" data-role="ui-definition-ad"></txpdiv>    <txpdiv class="txp_menuitem " data-report="switch-definition" data-definition="shd">     <txpdiv class="txp_definition_text" data-report="switch-definition" data-definition="shd">超清</txpdiv>     <txpdiv class="txp_definition_num" data-report="switch-definition" data-definition="shd">       720P                   </txpdiv>   </txpdiv>    <txpdiv class="txp_menuitem txp_current" data-report="switch-definition" data-definition="hd">     <txpdiv class="txp_definition_text" data-report="switch-definition" data-definition="hd">高清</txpdiv>     <txpdiv class="txp_definition_num" data-report="switch-definition" data-definition="hd">       480P                   </txpdiv>   </txpdiv>    <txpdiv class="txp_menuitem " data-report="switch-definition" data-definition="sd">     <txpdiv class="txp_definition_text" data-report="switch-definition" data-definition="sd">标清</txpdiv>     <txpdiv class="txp_definition_num" data-report="switch-definition" data-definition="sd">       270P                   </txpdiv>   </txpdiv> </txpdiv>     </txpdiv> </txpdiv><txpdiv class="txp_btn txp_btn_definition txp_none" data-role="txp-button-speed">  <txpdiv class="txp_label" data-role="txp-button-speed-label">倍速</txpdiv>  <txpdiv class="txp_popup txp_popup_definition" data-role="txp-button-speed-list">   <txpdiv class="txp_popup_content">         <txpdiv class="txp_menuitem">0.5x</txpdiv>         <txpdiv class="txp_menuitem txp_current">1.0x</txpdiv>         <txpdiv class="txp_menuitem">1.25x</txpdiv>         <txpdiv class="txp_menuitem">1.5x</txpdiv>         <txpdiv class="txp_menuitem">2.0x</txpdiv>       </txpdiv>  </txpdiv>   <txpdiv class="txp_speed_tips txp_none" data-role="txp-ui-control-settings-speed-tips">   <txpdiv class="txp_speed_tips_highlight">倍速播放</txpdiv>   在这里   <txpdiv class="txp_speed_tips_arrow" style="left: inherit;right: 50px;" data-role="txp-ui-control-settings-speed-tips-arrow"></txpdiv>   <button title="" class="txp_btn txp_btn_close" data-role="txp-ui-control-settings-speed-tips-close"></button>  </txpdiv> </txpdiv><txpdiv class="txp_btn txp_btn_volume" aria-label="音量" data-status="mute" data-role="txp-control-volume-button">      <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon txp_icon_volume" viewBox="0 0 24 24" version="1.1" data-role="txp-control-volume-click-button" data-report="mute-toggle">          <use class="txp_svg_symbol txp_svg_volume" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_volume" />          <use class="txp_svg_symbol txp_svg_volume_mute" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_volume_mute" />      </svg>        <txpdiv class="txp_popup txp_popup_volume" data-report="change-volume">          <txpdiv class="txp_popup_content" data-role="txp-control-volume-drag">              <txpdiv class="txp_volume_range" data-role="txp-control-volume-range">                  <txpdiv class="txp_volume_range_current" style="height: 0%;" data-role="txp-control-volume-value">                      <txpdiv class="txp_volume_handle" data-role="txp-control-volume-handler"></txpdiv>                  </txpdiv>              </txpdiv>          </txpdiv>      </txpdiv>  </txpdiv><txpdiv class="txp_btn txp_btn_fullscreen" aria-label="系统全屏" data-status="false" data-role="txp-ui-control-fullscreenbtn" data-report="window-fullscreen">   <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon txp_icon_fullscreen" viewBox="0 0 24 24" version="1.1">     <use class="txp_svg_symbol txp_svg_fullscreen" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_fullscreen" />     <use class="txp_svg_symbol txp_svg_fullscreen_true" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_fullscreen_true" />   </svg>   <txpdiv class="txp_tooltip" data-role="window-fullscreen">全屏</txpdiv> </txpdiv> <a class="txp_btn txp_btn_logo" aria-label="腾讯视频logo" data-role="txp-ui-control-logo" data-report="click-logo">   <span class="txp_logo"></span>   <txpdiv class="txp_tooltip">到腾讯视频观看此视频</txpdiv> </a></txpdiv>   </txpdiv> </txpdiv><txpdiv class="txp_hint_next txp_none" data-role="txp-next-tip-mod"> <txpdiv class="txp_next_pic"><img alt="" data-role="txp-next-tip-preview"></txpdiv>  <txpdiv class="txp_next_wording">   <txpdiv class="txp_label">下一个</txpdiv>   <txpdiv class="txp_next_title" data-role="txp-next-tip-text"></txpdiv>  </txpdiv> </txpdiv> <txpdiv class="txp_overlay_next txp_none" data-role="txp-next-tip-content-mod"> <div class="txp_next_poster" style="background-image:url()" data-role="txp-next-tip-content-poster"></div> <txpdiv class="txp_next_content">  <txpdiv class="txp_label">即将播放</txpdiv>  <txpdiv class="txp_next_title" data-role="txp-next-tip-content-text"></txpdiv>  <a class="txp_cancel" href="javascript:" data-role="txp-next-tip-content-cancle">取消</a>  <button class="txp_btn txp_btn_play_lg" data-status="play" data-role="txp-next-tip-content-play">   <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon txp_icon_play" viewBox="0 0 36 36">    <use class="txp_svg_symbol txp_svg_play" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_play" />   </svg>   <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon_cirlce" viewBox="0 0 72 72">    <circle cx="36" cy="36" r="34" />   </svg>  </button> </txpdiv> </txpdiv><txpdiv class="txp_tooltip_preview txp_tooltip_preview_hover txp_none" style="left:0;" data-role="txp_preview_mod">   <txpdiv class="txp_tooltip_bg txp_tooltip_current_bg" data-role="txp-preview-image">    <txpdiv class="txp_tooltip_text" data-role="txp-preview-time-text"></txpdiv>    <txpdiv class="txp_tooltip_preview_ad" data-role="txp-ui-control-preview-ad">  </txpdiv></txpdiv>   <txpdiv class="txp_tooltip_dot_text txp_none"></txpdiv> </txpdiv><txpdiv class="txp_preview txp_none" data-role="txp-preview-image-poster-mod">  <txpdiv class="txp_preview_img" data-role="txp-preview-image-poster"></txpdiv> </txpdiv> <txpdiv class="txp_tooltip_preview txp_none" style="left: -210px; width: 360px;" data-role="txp_preview_mod_list"> <txpdiv class="txp_tooltip_bg txp_tooltip_current_bg" data-role="txp-preview-image-list"><txpdiv class="txp_tooltip_text" data-role="txp-preview-time-text-list"></txpdiv> <txpdiv class="txp_tooltip_preview_ad" data-role="txp-ui-control-preview-ad">  </txpdiv></txpdiv><txpdiv class="txp_tooltip_bg" data-role="txp-preview-image-list"><txpdiv class="txp_tooltip_text" data-role="txp-preview-time-text-list"></txpdiv></txpdiv></txpdiv><txpdiv class="txp_barrage" data-role="txp-interactive-mod"></txpdiv><txpdiv class="txp_video_title txp_none" data-role="txp-ui-title-mod">   <a class="txp_title_link" data-role="txp-ui-title-text">【集锦】天津81-103北京 北京胜天津迎开门红 林书豪首秀25分</a> </txpdiv><txpdiv class="txp_screen_percent txp_none" data-role="txp-ui-screen-percent-wrap">  <txpdiv class="txp_screen_50" data-role="txp-ui-screen-percent-50" data-percent="50">50%</txpdiv>  <txpdiv class="txp_screen_75" data-role="txp-ui-screen-percent-75" data-percent="75">75%</txpdiv>  <txpdiv class="txp_screen_100 txp_current" data-role="txp-ui-screen-percent-100" data-percent="100">100%</txpdiv> </txpdiv> <txpdiv class="txp_top_btns" data-role="txp-ui-favorite"><button class="txp_btn txp_btn_collect txp_none" data-status="false" data-role="txp-ui-pip-btn">     <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon txp_icon_popup" viewBox="0 0 20 20" width="20px" height="20px" version="1.1">         <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">             <rect id="Rectangle-3-Copy-3" fill="#ffffff" x="10" y="11" width="5" height="3" />             <rect id="Rectangle-2-Copy-3" stroke="#ffffff" stroke-width="2" x="2" y="3" width="16" height="14" rx="1">             </rect>         </g>     </svg>     <txp class="txp_icon_text" data-role="txp-ui-pip-btn-label">画中画</txp> </button></txpdiv><txpdiv class="txp_overlay_play txp_none" data-role="txp_overlay_play" "="">  <button class="txp_btn txp_btn_play_lg" data-status="play" data-role="txp_overlay_play_status">   <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon txp_icon_play" viewBox="0 0 36 36" width="36" height="36" version="1.1">    <use class="txp_svg_symbol txp_svg_play" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_play" />    <use class="txp_svg_symbol txp_svg_pause" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_pause" />    <use class="txp_svg_symbol txp_svg_replay" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_replay" />   </svg>  </button> </txpdiv> <!-- 时间 --> <txpdiv class="txp_clock txp_none" data-role="txp-ui-clock-mod"></txpdiv> <txpdiv class="txp_console txp_none" data-role="txp-ui-console">   <txpdiv class="txp_console_inner">     <button title="关闭" class="txp_btn_close" data-role="txp-ui-console-close"></button>     <txpdiv title="双击发送错误信息" class="txp_line" style="cursor: pointer;" data-role="txp-ui-console-report">       <txpdiv class="txp_label">VID</txpdiv><txpdiv class="txp_value" data-role="txp-ui-console-vid">a0032dws70t</txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">播放模式</txpdiv><txpdiv class="txp_value" data-role="txp-ui-console-playertype-mode">chromehls</txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">分辨率</txpdiv><txpdiv class="txp_value">1920 x 1080</txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">视频宽高</txpdiv><txpdiv class="txp_value" data-role="txp-ui-console-videoSize">864 x 486</txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">音量</txpdiv><txpdiv class="txp_value" data-role="txp-ui-console-volume">50%</txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">视频协议</txpdiv><txpdiv class="txp_value" data-role="txp-ui-console-protocol">https</txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">CDN</txpdiv><txpdiv class="txp_value" style="font-size: 10px;" data-role="txp-ui-console-cdn">ltscsy.qq.com</txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">下载速度</txpdiv><txpdiv class="txp_value">         <txpdiv class="txp_box_progress" data-role="txp-ui-console-downloadspeed-chart"></txpdiv>         <span data-role="txp-ui-console-downloadspeed"></span>       </txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">缓冲质量</txpdiv><txpdiv class="txp_value">         <txpdiv class="txp_box_progress">           <txpdiv class="txp_box_value" style="width:0%" data-role="txp-ui-console-buf-per"></txpdiv>         </txpdiv>         <span data-role="txp-ui-console-buf-seconds"></span>       </txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">帧数</txpdiv><txpdiv class="txp_value" data-role="txp-ui-console-dropped-frames"></txpdiv>     </txpdiv>     <txpdiv class="txp_line txp_none" data-role="txp-ui-console-errorcode-wrap">       <txpdiv class="txp_label">错误码</txpdiv>       <txpdiv class="txp_value" data-role="txp-ui-console-errorcode"></txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">版本号</txpdiv>       <txpdiv class="txp_value">3.4.40-1.0.141 (2019-10-15 17:20:45)</txpdiv>     </txpdiv>     <txpdiv class="txp_line">       <txpdiv class="txp_label">播放流水</txpdiv>       <txpdiv class="txp_value" data-role="txp-ui-console-flowid">ce40e12047db369738a44c498e239b3f_70201</txpdiv>     </txpdiv>     <txpdiv class="txp_line" data-role="txp-ui-drm-flag">       <txpdiv class="txp_label">drm</txpdiv>       <txpdiv class="txp_value _drm_flag_value">false</txpdiv>     </txpdiv>     <txpdiv class="txp_line txp_none" data-role="txp-ui-console-local-log">       <txpdiv class="txp_label">本地日志</txpdiv>       <txpdiv class="txp_value">         <span class="_download_txp_local_log" style="cursor: pointer;">点击下载</span> /          <span class="_delete_txp_local_log" style="cursor: pointer;">点击清除</span>       </txpdiv>     </txpdiv>   </txpdiv> </txpdiv><txpdiv class="txp-watermark" data-role="txp-ui-watermark-mod"> <img class="txp_waterMark_pic" id="0" style="left: 80px; top: 24px; width: 17px; height: 5px; position: absolute;" src="https://puui.qpic.cn/vcolumn_pic/0/ti_yu_v2/0"></txpdiv><txpdiv class="txp-watermark-action txp_none" data-role="txp-ui-watermark-action-mod"> </txpdiv><txpdiv class="txp_overlay_link txp_none" data-role="txp-right-click-menu-copy-success">     <txpdiv class="txp_icon_link">         <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon" viewBox="0 0 36 36" version="1.1">             <use class="txp_svg_symbol" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_link" />         </svg>     </txpdiv> </txpdiv> <txpdiv class="txp_overlay_next txp_overlay_next_complete txp_none" data-role="txp-ui-endtip-mod">  <div class="txp_next_poster" style='background: url("//vpic.video.qq.com/-33988465/a0032dws70t.png") no-repeat 0% 0% / 100% 100%;' data-role="txp-ui-endtip-background"></div>  <txpdiv class="txp_next_content">   <txpdiv class="txp_label" data-role="txp-ui-endtip-label">腾讯视频观看完整版</txpdiv>   <txpdiv class="txp_next_title" style="cursor:pointer;" data-role="txp-ui-endtip-title">【集锦】天津81-103北京 北京胜天津迎开门红 林书豪首秀25分</txpdiv>   <button class="txp_btn txp_btn_play_lg" data-status="play" data-role="txp-ui-endtip-button">    <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon txp_icon_play" viewBox="0 0 36 36">     <use class="txp_svg_symbol txp_svg_play" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#txp_svg_play" />    </svg>    <svg xmlns="http://www.w3.org/2000/svg" class="txp_icon_cirlce" viewBox="0 0 72 72">     <circle cx="36" cy="36" r="34" />    </svg>   </button>  </txpdiv> </txpdiv></txpdiv> </div>
+          <div class="click-layer"></div>
+        </li>
+
+                  </ul>
+  </div>
+</div>
+		<div class="mainbody">
+		  <div id="picDir" bosszone="gqzt_4">
+		    <a class="prev icon disabled"data-rel="#picUl1"></a>
+		    <a class="next icon" data-rel="#picUl2"></a>
+		  </div>
+		</div>
+</div>
+    <div class="layout qq-gg gg-4">
+<div class="l_qq_com" id="NEW_QQCOM_N_Width4" style="width: 1400px; height: 90px; overflow: hidden; display: block; position: relative;" adconfig_lview="l.qq.com" adconfig_charset="gbk" adconfig_lview_template="//l.qq.com/lview?c=www&amp;loc={loc}" oid="100" btoid="0" display="auto"><a style="display:block;cursor:pointer;width:1400px;height:90px;background-image:url(//ra.gtimg.com/web/default_fodders/1400x90_www.png);background-size:1400px 90px;background-position:50% 50%;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='//ra.gtimg.com/web/default_fodders/1400x90_www.png',sizingMethod='scale');" href="https://news.qq.com/mobile/index.htm" target="_blank"></a></div><!--NEW_QQCOM_N_Width4 AD end --><!--[if !IE]>|xGv00|988d4677a77862e5edbcb3f52aba9377<![endif]-->
+    </div>
+    <div class="layout qq-footer" bossexpo="bg_dibu" bosszone="dibu">
+  <a href="http://www.tencent.com/" target="_blank" rel="nofollow">关于腾讯</a> | <a href="http://www.tencent.com/index_e.shtml" target="_blank" rel="nofollow">About Tencent</a> | <a href="http://www.qq.com/contract.shtml" target="_blank" rel="nofollow">服务协议</a>
+  | <a href="https://privacy.qq.com/" target="_blank" rel="nofollow">隐私政策</a> | <a href="http://open.qq.com/" target="_blank" rel="nofollow">开放平台</a><!--  | <a href="http://www.tencentmind.com/" target="_blank" rel="nofollow">广告服务</a> -->
+  | <a href="http://www.tencent.com/about/corp.shtml" target="_blank" rel="nofollow">商务洽谈</a> | <a href="http://hr.tencent.com/" target="_blank" rel="nofollow">腾讯招聘</a> | <a href="http://gongyi.qq.com/" target="_blank" rel="nofollow">腾讯公益</a>
+  | <a href="http://kf.qq.com/" target="_blank" rel="nofollow">客服中心</a> | <a href="http://www.qq.com/map/" target="_blank" rel="nofollow">网站导航</a> | <a href="http://dldir1.qq.com/dlomg/qqcom/mini/QQNewsMini5.exe" rel="nofollow">客户端下载</a>
+  | <a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank" rel="nofollow">版权所有</a><br>
+  <a href="http://szwljb.gov.cn/" target="_blank" rel="nofollow">深圳举报中心</a> | <a href="http://ga.sz.gov.cn" target="_blank" rel="nofollow">深圳公安局</a> | <a href="http://www.qq.com/dzwfggcns.htm" target="_blank" rel="nofollow">抵制违法广告承诺书</a><!--  | <a class="lchot" href="http://www.gdis.cn/admin/newstext_netsun.asp" target="_blank" rel="nofollow">阳光·绿色网络工程</a> -->
+  | <a href="http://www.qq.com/copyright.shtml" target="_blank" rel="nofollow">版权保护投诉指引</a> | <a href="https://gdca.miit.gov.cn/" target="_blank" rel="nofollow">广东省通管局</a><br>
+  <span><a href="http://www.qq.com/culture.shtml" target="_blank" rel="nofollow">粤网文[2017]6138-1456号</a> <a href="http://www.qq.com/internet_licence.htm" target="_blank" rel="nofollow">新出网证（粤）字010号</a> <a href="http://www.qq.com/cbst.shtml" target="_blank" rel="nofollow">网络视听许可证1904073号</a>
+    增值电信业务经营许可证：<a href="http://www.qq.com/icp.shtml" target="_blank" rel="nofollow">粤B2-20090059</a> <a href="http://www.qq.com/icp1.shtml" target="_blank" rel="nofollow">B2-20090028</a>
+  </span><br>
+  <a href="http://www.qq.com/scio.htm" target="_blank" rel="nofollow">新闻信息服务许可证</a> <a href="http://www.qq.com/xwdz.shtml" target="_blank" rel="nofollow">粤府新函[2001]87号</a> 违法和不良信息举报电话：0755-83765566-9 <a style="" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030002000001" target="_blank"><span>粤公网安备
+      44030002000001号</span></a><br>
+  <a href="http://www.qq.com/spyp.htm" target="_blank">互联网药品信息服务资格证书 （粤）—非营业性—2017-0153</a><br>
+  <span>Copyright  1998 - </span><span id="currentFullYear">2019</span> <span>Tencent. All Rights Reserved</span>
+  <div class="footernew">
+    <div class="footernewdiv">
+    <p>
+      <span class="fl"><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow"><img width="35" height="43" alt="经营性网站备案信息" src="//mat1.gtimg.com/www/images/qq2012/ind36.gif" border="0"></a></span>
+      <span class="fr"><a class="lcblack" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0272000112400002" target="_blank" rel="nofollow">经营性网站<br>
+      备案信息</a></span>
+    </p>
+    <p>
+      <span class="fl" style="width:44px;"><a href="http://www.12377.cn/" target="_blank" rel="nofollow"><img width="44" height="44" alt="中国互联网举报中心" src="//mat1.gtimg.com/www/images/qq2012/buliang.png" border="0"></a></span>
+      <span class="fr" style="width:64px;"><a class="lcblack" href="http://www.12377.cn/" target="_blank" rel="nofollow">中国互联网<br>
+      举报中心</a></span>
+    </p>
+    <p>
+      <span class="fl" style="width:44px;"><a href="http://www.wenming.cn" target="_blank" rel="nofollow"><img width="44" height="42" alt="中国文明网传播文明" src="//mat1.gtimg.com/www/images/qq2012/wmlogo.gif" border="0"></a></span>
+      <span class="fr" style="width:64px;"><a class="lcblack" href="http://www.wenming.cn" target="_blank" rel="nofollow">中国文明网<br>传播文明</a></span>
+    </p>
+    <p style="width:128px;height:52px;border:0;">
+      <span class="fl" style="padding:0;"><a href="https://ss.knet.cn/verifyseal.dll?sn=2010051300100001081&amp;ct=df&amp;a=1&amp;pa=337337" target="_blank" rel="nofollow"><img alt="诚信网站" src="//mat1.gtimg.com/www/images/qq2012/cxrz5.png" border="0"></a></span>
+    </p>
+    <p>
+      <span class="fl" style="width:44px;"><a href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow"><img title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" src="//mat1.gtimg.com/www/images/qq2012/gswj2015.jpg"></a></span>
+      <span class="fr" style="width:64px;"><a class="lcblack" href="http://szcert.ebs.org.cn/6917b6fe-b844-4e12-97c5-85b8d1df30ed" target="_blank" rel="nofollow">工商网监<br>电子标识</a></span>
+    </p>
+    </div>
+  </div>
+</div>
+    <div class="elevator" id="elevator">
+      <a title="刷新" class="refresh fix" id="js_refresh" bosszone="shuaxin"><span class="icon"></span><br>刷新</a>
+      <a title="用户反馈" class="feedback fix" href="https://support.qq.com/products/4312" target="_blank" bosszone="fankui">用户<br>反馈</a>
+      <a title="返回顶部" class="backtop" id="js_gotop" target="_self" bosszone="dingbu"><span class="icon"></span></a>
+    </div>
+  </div>
+  <div class="pop-player" id="pop-player">
+  <div class="inner">
+    <div class="player-hd">
+      <div class="player-container" id="video-pop"></div>
+      <div class="tit"></div>
+      <a class="close-btn" >关闭</a>
+    </div>
+    <div class="player-ft cf">
+      <div class="scroll-mod">
+        <ul class="player-list cf"></ul>
+        <a class="q-icons btn btn-left" ></a>
+        <a class="q-icons btn btn-right" ></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pop-player pop-player2" id="pop-player2">
+  <div class="inner">
+    <div class="player-hd">
+      <div class="player-container" id="video-pop2"></div>
+      <div class="tit"></div>
+      <a class="close-btn" >关闭</a>
+      <div class="hd-info"></div>
+    </div>
+    <div class="player-ft cf">
+      <div class="scroll-mod">
+        <ul class="player-list cf"></ul>
+      </div>
+      <a class="q-icons btn btn-left" ></a>
+      <a class="q-icons btn btn-right" ></a>
+    </div>
+  </div>
+</div>
+
+<div class="min-player" id="min-player">
+  <div class="min-hd cf">
+    <h2 class="tit fl"></h2>
+    <a class="close-btn fr">关闭</a>
+  </div>
+  <div class="min-bd">
+    <div class="player-container" id="video-min"></div>
+  </div>
+</div>
+  </body>
+</html>
