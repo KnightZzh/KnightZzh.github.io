@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+				
+					姓名: <input type="text" id="name" /> 
+					学号: <input type="text" id="number" /> 
+					<br /><br />
+					<input type="button" value="提交" id="ti" onclick="add()" />
+		
+					<table border="1" id="t1">
+							<tr>
+								<td>姓名</td>
+								<td>学号</td>
+								<td>
+									<a onclick="empty()" href="">清空</a>
+								</td>
+							</tr>
+					</table>
+					<script type="text/javascript">
+						var count = 0;
+						function add()
+						{
+							var a = document.createElement("tr");
+							var t1 = document.getElementById("t1");
+							var name = document.getElementById("name").value;
+							var number = document.getElementById("number").value;
+							t1.innerHTML+=
+							"<tr id=" + count +">"+
+							"<td>"+name+"</td>"+
+							"<td>"+number+"</td>"+
+							'<td><a href="javascript:delet('+count+')">'+
+							"删除"+
+							"</a></td>"+
+							"</tr>";
+							count++;
+						}
+						function delet(count){
+						    var row = document.getElementById(count);
+						    row.remove(count);
+						}
+						function empty(){
+							var all;
+							for(;count>0;count--){
+								all = document.getElementById(count);
+								all.remove(count);
+							}
+						}
+
+					</script>
+				
+	</body>
+</html>
