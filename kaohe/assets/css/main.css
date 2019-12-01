@@ -1343,7 +1343,7 @@ input, select, textarea {
 			border-radius: 4px;
 		}
 
-			#header nav ul li {
+			* #header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
 			}
