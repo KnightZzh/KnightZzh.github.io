@@ -3,32 +3,85 @@
 	<head>
 		<title>ACG咖啡屋</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript>
-			<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="css/main.css" />
 			<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
 			</script>
 			<script> 
-			$(document).ready(function(){
+			$(function(){
 			  $("#flip").click(function(){
 			    $("#panel").slideToggle("slow");
 			  });
 			});
-			$(document).ready(function(){
+			$(function(){
 			  $("#flip1").click(function(){
 			    $("#panel1").slideToggle("slow");
 			  });
-			});$(document).ready(function(){
+			});$(function(){
 			  $("#flip2").click(function(){
 			    $("#panel2").slideToggle("slow");
 			  });
-			});$(document).ready(function(){
+			});$(function(){
 			  $("#flip3").click(function(){
 			    $("#panel3").slideToggle("slow");
 			  });
 			});
+			$(function() {
+				var $window = $(window),
+					$body = $('body'),
+					$wrapper = $('#wrapper'),
+					$header = $('#header'),
+					$footer = $('#footer'),
+					$main = $('#main'),
+					$main_wenzhang = $('article');
+				
+				$main1 = function(id) {
+					var $article = $main_wenzhang.filter('#' + id);
+						$body.addClass('xianshi');
+						setTimeout(function() {
+							$header.hide();
+							$footer.hide();
+							$main.show();
+							$article.show();
+							setTimeout(function() {
+								$article.addClass('dakai');
+							}, 25);
+						}, 25);
+				};
+			
+				$main2 = function(sb) {
+					var $article = $main_wenzhang.filter('.dakai');
+					if (!$body.hasClass('xianshi'))
+						return;
+					$article.removeClass('dakai');
+					setTimeout(function() {
+						$article.hide();
+						$main.hide();
+						$footer.show();
+						$header.show();
+						$body.removeClass('xianshi');
+					}, 400);
+				};
+				$main_wenzhang.each(function() {
+					var $this = $(this);
+					$('<div class="close"></div>')
+						.appendTo($this)
+						.on('click', function() {
+							location.hash = '';
+						});
+				});
+				$window.on('hashchange', function() {
+					if (location.hash == '') {
+						$main2();
+					}
+					if ($main_wenzhang.filter(location.hash).length > 0) {
+						$main1(location.hash.substr(1));
+					}
+				});
+				$main.hide();
+				$main_wenzhang.hide();
+			});
 			</script>
+			
 			<style type="text/css"> 
 			#panel,#flip
 			{
@@ -84,26 +137,8 @@
 					height:300px;
 					background: url(images/sad.jpg);
 					animation:myfirst 5s infinite;
-					-webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
-					-o-animation:myfirst 5s infinite; /* Opera */
 					float: left;}
 					@keyframes myfirst
-					{
-					0%   {background: url(images/sad.jpg);}
-					25%  {background: url(images/58240711_p0.png);}
-					50%  {background: url(images/QQ图片20190907091039.jpg);}
-					75% {background: url(images/QQ图片20190907091159.png);}
-				}
-				
-				
-				@keyframes myfirst
-					{
-					0%   {background: url(images/sad.jpg);}
-					25%  {background: url(images/58240711_p0.png);}
-					50%  {background: url(images/QQ图片20190907091039.jpg);}
-					75% {background: url(images/QQ图片20190907091159.png);}
-				}
-				@keyframes myfirst
 					{
 					0%   {background: url(images/sad.jpg);}
 					25%  {background: url(images/58240711_p0.png);}
@@ -117,18 +152,15 @@
 					border-bottom-width: 1px;
 					max-width: 100%;
 				}
+				
 			</style>
+			
 	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
+	<body class="sb2">
 		<div id="wrapper">
 
-			<!-- Header -->
 			<header id="header">
-				<div class="logo">
-					<span class="icon fa-gem"></span>
-				</div>
+				
 				<div class="content">
 					<div class="inner">
 						<h1>ACG咖啡屋</h1>
@@ -141,15 +173,15 @@
 						<li><a href="#work">个性</a></li>
 						<li><a href="#about">关于咖啡屋</a></li>
 						<li><a href="#contact">招聘</a></li>
-						<!--<li><a href="#elements">Elements</a></li>-->
+
 					</ul>
 				</nav>
 			</header>
 
-			<!-- Main -->
+
 			<div id="main">
 
-				<!-- Intro -->
+
 				<article id="intro">
 					<h2 class="major">创业计划书</h2>
 					<h3>创业项目介绍</h3>
@@ -159,15 +191,12 @@
 									<br>
 									<br></div>
 									<br>
-					<!-- <fieldset> -->
-									
-								<!-- </fieldset> -->
+
 					<fieldset>
 									<h3>组织结构</h3>
-									<!-- <br> -->
-									
-									<span class="image main"><img src="images/timg.jpg" alt="" /></span>
 									<br>
+									
+									<span class="image main"><img src="images/timgU01UH0DYs.jpg" /></span>
 									
 								</fieldset>
 					<fieldset>
@@ -189,6 +218,9 @@
 												<span class="image main"><img src="images/QQ图片20190907091008.jpg" alt="" /></span>
 												将当下年轻人的爱好与工作结合，以大量的宅男为顾客，工作人员与顾客拥有共同的爱好。
 												<br>
+												<span class="image main"><img src="images/timgEJEU23GG.jpg" alt="" /></span>
+												<br>
+												<span class="image main"><img src="images/timgYZ8QX6LO.jpg" alt="" /></span>
 												<br>
 											</fieldset>
 					<fieldset>
@@ -223,7 +255,6 @@
 				</article>
 				
 
-				<!-- Work -->
 				<article id="work">
 					<h2 class="major">个性</h2>
 					
@@ -258,7 +289,7 @@
 					
 				</article>
 
-				<!-- About -->
+
 				<article id="about">
 					<h2 class="major">关于咖啡屋</h2>
 					<span class="image main"><img src="images/57561242_p0.jpg" alt="" /></span>
@@ -270,11 +301,10 @@
 					<span class="image main"><img src="images/sdd.jpg" alt="" /></span>
 				</article>
 
-				<!-- Contact -->
 				<article id="contact">
 					<h2 class="major">招聘</h2>
 					<span class="image main"><img src="images/QQ图片201909070905365646.jpg" alt="" /></span>
-					<form method="post" action="#">
+					<form method="post">
 						<div class="fields">
 							<div class="field half">
 								<label for="name">姓名</label>
@@ -294,31 +324,14 @@
 							<li><input type="reset" value="清空" /></li>
 						</ul>
 					</form>
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
+					
 				</article>
 			</div>
-
-			<!-- Footer -->
 			<footer id="footer">
 				<p class="copyright">&copy;网络工程一班201905555520张智恒 </p>
 			</footer>
 
 		</div>
-
-		<!-- BG -->
-		<div id="bg"></div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<!-- <script src="assets/js/util.js"></script> -->
-		<script src="assets/js/main.js"></script>
-
+</div>
 	</body>
 </html>
